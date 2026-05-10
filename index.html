@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reynaldo Ciriaco Jr. | IT Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of Reynaldo Ciriaco Jr., 4th Year BSIT-3 student showcasing projects in web development, UI/UX design, and software engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">RC</div>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">
+        <span class="logo-text">RC<span class="logo-dot">.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-animate="fade-up">
+          <span class="badge-dot"></span>
+          <span>Available for Opportunities</span>
+        </div>
+        <h1 class="hero-name" data-animate="fade-up" data-delay="100">
+          Reynaldo<br />
+          <span class="name-highlight">Ciriaco Jr.</span>
+        </h1>
+        <p class="hero-role" data-animate="fade-up" data-delay="200">
+          <span class="role-prefix">4th Year</span>
+          <span class="role-main">BSIT-3 Student</span>
+        </p>
+        <p class="hero-tagline" data-animate="fade-up" data-delay="300">
+          Crafting digital experiences through thoughtful design,
+          clean code, and user-centered solutions.
+        </p>
+        <div class="hero-actions" data-animate="fade-up" data-delay="400">
+          <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contactBtn">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats" data-animate="fade-up" data-delay="500">
+          <div class="stat-item">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Disciplines</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left" data-delay="200">
+        <div class="photo-frame">
+          <div class="photo-ring ring-1"></div>
+          <div class="photo-ring ring-2"></div>
+          <div class="photo-glow"></div>
+          <div class="photo-wrapper">
+            <img src="assets/Ciriaco Jr, Reynaldo.png" alt="Reynaldo Ciriaco Jr. - Professional Photo"
+              class="hero-photo" id="heroPhoto" />
+          </div>
+          <div class="photo-badge badge-dev">
+            <i class="fas fa-code"></i>
+            <span>Developer</span>
+          </div>
+          <div class="photo-badge badge-design">
+            <i class="fas fa-pen-nib"></i>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" id="heroScroll">
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate="fade-right">
+          <p class="about-intro">
+            Hello! I'm <strong>Reynaldo Ciriaco Jr.</strong>, a passionate and driven 4th-year Bachelor of Science in
+            Information Technology student specializing in software development and UI/UX design.
+          </p>
+          <p class="about-body">
+            Throughout my academic journey, I have developed a strong foundation in creating functional, user-centric
+            digital solutions. My experience spans from full-stack web development to designing intuitive interfaces for
+            educational and business applications.
+          </p>
+          <p class="about-body">
+            I am committed to continuous learning, applying best practices in software engineering, and delivering
+            solutions that make a meaningful impact. I believe great technology starts with understanding people's
+            needs.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="detail-label">Degree</span>
+                <span class="detail-value">BS Information Technology</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <span class="detail-label">Year & Section</span>
+                <span class="detail-value">4th Year — BSIT-3</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="detail-label">Focus Areas</span>
+                <span class="detail-value">Web Dev · UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards" data-animate="fade-left">
+          <div class="about-card card-web">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Building responsive, performant web applications with modern technologies and best practices.</p>
+          </div>
+          <div class="about-card card-ui">
+            <div class="card-icon"><i class="fas fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive, accessible, and visually compelling user interfaces that delight users.</p>
+          </div>
+          <div class="about-card card-db">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>System Design</h3>
+            <p>Architecting scalable systems with efficient data models and clean, maintainable code.</p>
+          </div>
+          <div class="about-card card-collab">
+            <div class="card-icon"><i class="fas fa-users"></i></div>
+            <h3>Collaboration</h3>
+            <p>Working effectively in teams to deliver high-quality software solutions on time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="skills-grid">
+        <!-- Development -->
+        <div class="skill-category" data-animate="fade-up" data-delay="0">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Kotlin</span>
+          </div>
+        </div>
+        <!-- Design -->
+        <div class="skill-category" data-animate="fade-up" data-delay="100">
+          <div class="skill-cat-header">
+            <i class="fas fa-pen-ruler"></i>
+            <h3>Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Design Systems</span>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-category" data-animate="fade-up" data-delay="200">
+          <div class="skill-cat-header">
+            <i class="fas fa-wrench"></i>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Android Studio</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">XAMPP</span>
+            <span class="skill-tag">Canva</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category" data-animate="fade-up" data-delay="300">
+          <div class="skill-cat-header">
+            <i class="fas fa-star"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Hotel Reservation -->
+        <div class="project-card" data-animate="fade-up" data-delay="0" id="projectHotel">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-hotel">
+              <div class="mockup-browser">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen screen-hotel">
+                  <i class="fas fa-hotel screen-icon"></i>
+                  <span>Hotel Reservation System</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2nd Year · Academic Project</span>
+              <span class="project-type type-web">Web App</span>
+            </div>
+            <h3 class="project-title">Online Hotel Reservation System</h3>
+            <p class="project-desc">
+              A comprehensive full-stack hotel reservation platform enabling customers to browse real-time room
+              availability, make secure bookings, and manage their reservations seamlessly. Engineered with a
+              responsive, intuitive interface that streamlines the end-to-end guest booking experience — from room
+              discovery to booking confirmation — while supporting administrative management features for hotel staff.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight"><i class="fas fa-check-circle"></i> Real-time room availability</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Booking management dashboard</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Responsive interface</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Recipe Application -->
+        <div class="project-card card-reverse" data-animate="fade-up" data-delay="100" id="projectRecipe">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-recipe">
+              <div class="mockup-browser">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen screen-recipe">
+                  <i class="fas fa-utensils screen-icon"></i>
+                  <span>Recipe Application</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">API Integration</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2nd Year · Application Project</span>
+              <span class="project-type type-app">App</span>
+            </div>
+            <h3 class="project-title">Recipe Application</h3>
+            <p class="project-desc">
+              An interactive recipe discovery platform designed to inspire culinary creativity. Users can explore a rich
+              library of categorized recipes complete with detailed ingredient lists, nutritional information, and clear
+              step-by-step cooking instructions. The application delivers an engaging, user-friendly experience that
+              makes home cooking accessible and enjoyable for users of all skill levels.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight"><i class="fas fa-check-circle"></i> Categorized recipe library</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Step-by-step instructions</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Ingredient management</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: WordHuntr Capstone -->
+        <div class="project-card featured" data-animate="fade-up" data-delay="200" id="projectWordhuntr">
+          <div class="featured-badge"><i class="fas fa-star"></i> Capstone Project</div>
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-wordhuntr">
+              <div class="mockup-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-wordhuntr">
+                  <div class="screen-header">
+                    <i class="fas fa-book-open"></i>
+                    <span>WordHuntr</span>
+                  </div>
+                  <div class="screen-tiles">
+                    <div class="tile">W</div>
+                    <div class="tile">O</div>
+                    <div class="tile">R</div>
+                    <div class="tile">D</div>
+                    <div class="tile active">H</div>
+                    <div class="tile">U</div>
+                    <div class="tile">N</div>
+                    <div class="tile">T</div>
+                    <div class="tile">R</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Android</span>
+                <span class="tag">Kotlin</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">4th Year · Capstone Project</span>
+              <span class="project-type type-uiux">UI/UX</span>
+            </div>
+            <h3 class="project-title">UI/UX Design of WordHuntr</h3>
+            <p class="project-desc">
+              The capstone project for WordHuntr — an innovative educational vocabulary learning application.
+              Spearheaded the end-to-end UI/UX design process, from user research and wireframing to high-fidelity
+              prototyping in Figma. The design philosophy centers on gamification, featuring interactive vocabulary
+              quizzes, word-matching games, and scenario-based learning modules that make language acquisition engaging,
+              progressive, and measurably effective for students.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight"><i class="fas fa-check-circle"></i> Gamified learning modules</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> High-fidelity Figma prototype</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Scenario-based activities</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> User research & testing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Online Banking UI/UX -->
+        <div class="project-card" data-animate="fade-up" data-delay="300" id="projectBanking">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-banking">
+              <div class="mockup-browser">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen screen-banking">
+                  <i class="fas fa-landmark screen-icon"></i>
+                  <span>Online Banking UI</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Prototyping</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-year">2nd Year · Design Project</span>
+              <span class="project-type type-uiux">UI/UX</span>
+            </div>
+            <h3 class="project-title">UI/UX Design of Online Banking System</h3>
+            <p class="project-desc">
+              A comprehensive UI/UX design initiative for a modern online banking platform, emphasizing security,
+              clarity, and accessibility. The design covers the complete user journey — from account onboarding to daily
+              transaction management — with a clean, trust-inspiring visual language. Key features include streamlined
+              fund transfers, real-time account dashboards, transaction history with advanced filtering, and an
+              accessibility-first approach that caters to users of all technical backgrounds.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight"><i class="fas fa-check-circle"></i> Accessibility-first design</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Secure transaction flows</div>
+              <div class="highlight"><i class="fas fa-check-circle"></i> Modern visual language</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Have a project in mind or want to connect? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-card" id="contactEmail">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:reynaldo.ciriaco@email.com" class="contact-value">reynaldo.ciriaco@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactLocation">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Philippines</span>
+            </div>
+          </div>
+          <div class="contact-card" id="contactStatus">
+            <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Status</span>
+              <span class="contact-value contact-available">Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/reynaldociriaco/ReynaldoCiriacoJr." class="social-btn" id="socialGitHub"
+              aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/reynaldo-ciriaco-jr-b859a128a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-btn" id="socialLinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/arjhay.ciriaco.7#" class="social-btn" id="socialFacebook"
+              aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-animate="fade-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group" id="formGroupName">
+              <label for="senderName">Full Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="senderName" name="name" placeholder="Your full name" required />
+              </div>
+            </div>
+            <div class="form-group" id="formGroupEmail">
+              <label for="senderEmail">Email Address</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="senderEmail" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group" id="formGroupSubject">
+              <label for="messageSubject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="messageSubject" name="subject" placeholder="What's this about?" required />
+              </div>
+            </div>
+            <div class="form-group" id="formGroupMessage">
+              <label for="messageBody">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="messageBody" name="message" rows="5" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitContactBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent successfully! I'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">RC<span>.</span></a>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Reynaldo Ciriaco Jr. All rights reserved.</p>
+        <p>4th Year BSIT-3 · BS Information Technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
